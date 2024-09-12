@@ -1,0 +1,19 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.LoginContainer{
+    height: 100vh;
+    display: flex;
+    /*align-content: center;*/
+    /*justify-content: center;*/
+}
+.LogInBox{
+    height: 500px;
+    width: 384px;
+    margin:auto;
+    border:3px solid #4f46e5;
+    border-radius: 5px;
+}
