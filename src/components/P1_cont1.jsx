@@ -1,5 +1,5 @@
 import React from "react";
-import './shoppingCart.css';
+import '../Admin Page StylesSheets/shoppingCart.css';
 import CateComponent from "./CompoForCategory";
 import Carosals from "./Backgrounds";
 import meat from '../assets/categories/meat.png';
@@ -20,18 +20,19 @@ function P1_cont1(){
             <div className="categoriesGlanceSkele">
                 <CateComponent picture={meat} name={"Meat"}/>
                 <CateComponent picture={Vegetables} name={"Vegetables"}/>
+                <CateComponent picture={Vegetables} name={"Vegetables"}/>
+                <CateComponent picture={mixfruits} name={"Fruits"}/>
                 <CateComponent picture={mixfruits} name={"Fruits"}/>
                 <CateComponent picture={organicmilk} name={"Fruits"}/>
+                <CateComponent picture={organicmilk} name={"Fruits"}/>
                 <CateComponent picture={grains} name={"Grains"}/>
+                <CateComponent picture={grains} name={"Grains"}/>
+                <CateComponent picture={spices} name={"Spices"}/>
                 <CateComponent picture={spices} name={"Spices"}/>
             </div>
             <div className="dedicatedOffersSkele">
             <img src={Cardoffers} alt="adv" />
             </div>
-
-            {/* <Carosals />
-            <Categories />
-            <Categories /> */}
         </div>
     )
 }

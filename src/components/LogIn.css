@@ -4,16 +4,146 @@
     padding: 0;
     margin: 0;
 }
-.LoginContainer{
-    height: 100vh;
-    display: flex;
-    /*align-content: center;*/
-    /*justify-content: center;*/
-}
+
 .LogInBox{
     height: 500px;
     width: 384px;
     margin:auto;
     border:3px solid #4f46e5;
     border-radius: 5px;
+}
+
+.Log-in-btn {
+    /*list-style: none;*/
+    background-color: var(--PrimaryColor);
+    border-radius: var(--btnRadius);
+}
+
+.Log-in-btn:hover {
+    background-color: var(--PrimaryColorHover);
+}
+
+.links-on-signin-page {
+    color: #315659;
+}
+
+.links-on-signin-page:hover {
+    color: #3d6b6e;
+}
+
+.input-border:focus {
+    outline: #35b13b 2px solid;
+    border: none;
+}
+
+/*Menu for profile in the home page*/
+
+.ProfileOptions-container {
+    display: grid;
+    /*flex-direction: column;*/
+    /*gap: 5px;*/
+    height: auto;
+    width: auto;
+    border-radius: 11px;
+    background: #ffffff;
+    box-shadow: 3px 3px 16px 0 #202020, -1px 0 8px 0 #ffffff;
+    align-items: flex-start;
+    right: 50px;
+    top: 80px;
+    position: absolute;
+}
+
+.ProfileOptions {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding-block: 10px;
+    padding-right: 100px;
+    color: black;
+    margin: 8px;
+    padding-left: 10px;
+    /*padding: 10px 60px;*/
+    transition: all .5s ease-in-out;
+}
+
+.ProfileOptions:hover {
+    background: #6b7280;
+    border-radius: 11px;
+    color: #e5e7eb;
+}
+
+/*Location button css*/
+.location-button {
+    display: flex;
+    /*margin-left: 20px;*/
+    flex-direction: row;
+    /*flex: 0 1 auto;*/
+    background-color: #F7FFEA;
+    color: black;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2px;
+    padding-inline: 10px;
+}
+
+.location-icon {
+    font-size: 32px;
+    color: #4C4C4C;
+}
+
+.location-divider {
+    font-size: 30px;
+    font-weight: 10;
+}
+
+.location-button-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 18px;
+}
+
+.location-button-text h3 {
+    color: #5D5D5D;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.location-button-text h1 {
+    /*color: #5D5D5D;*/
+    font-size: 19px;
+    font-weight: 800;
+}
+
+/*Cart styles*/
+.cart-section {
+    /*margin-left: 20px;*/
+    /*flex: 0 1 auto;*/
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon {
+    font-size: 38px;
+    /*position: relative;*/
+}
+
+.cart-count {
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    font-size: 11px;
+    border-radius: 50%;
+    background: #E04949;
+    position: absolute;
+    top: -2px;
+    right: -4px;
+}
+
+.nav-align {
+    margin-left: 0;
+    /*gap: 10px;*/
 }

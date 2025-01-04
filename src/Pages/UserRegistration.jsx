@@ -12,7 +12,8 @@ function UserRegistrationForm() {
         lastName: "",
         email: "",
         phoneNumber: "",
-        password: ""
+        password: "",
+        role: ""
     });
 
     const navigate = useNavigate();
@@ -38,9 +39,12 @@ function UserRegistrationForm() {
             window.alert("Passwords don't match");
             return
         }
+        if (formData.role)
 
         try{
-            const response = await fetch("http://127.0.0.1:8901/user-registration", {
+
+            console.log(formData)
+            const response = await fetch("https://localhost:8901/user-registration", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",
@@ -84,7 +88,7 @@ function UserRegistrationForm() {
                                         onChange={handleChange}
                                         required={true}
                                         autoComplete="given-name"
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 input-border py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -103,7 +107,7 @@ function UserRegistrationForm() {
                                         onChange={handleChange}
                                         required={true}
                                         autoComplete="family-name"
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 input-border sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -121,7 +125,7 @@ function UserRegistrationForm() {
                                         onChange={handleChange}
                                         required={true}
                                         autoComplete="email"
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 input-border sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -137,7 +141,7 @@ function UserRegistrationForm() {
                                         value={formData.phoneNumber}
                                         onChange={handleChange}
                                         required={true}
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 input-border sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -154,7 +158,7 @@ function UserRegistrationForm() {
                                         value={formData.password}
                                         onChange={handleChange}
                                         required={true}
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 input-border sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -170,7 +174,7 @@ function UserRegistrationForm() {
                                         required={true}
                                         value={formPassword.confirmPassword}
                                         onChange={handlePasswordChange}
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 input-border sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -181,7 +185,7 @@ function UserRegistrationForm() {
                 <div className="ml-10 mr-10 mt-5 mb-5 flex items-center justify-center ">
                     <button
                         type="submit"
-                        className="Log-in-btn flex w-full justify-center px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        className="Log-in-btn flex w-full justify-center px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm"
                     >
                         Create Account
                     </button>

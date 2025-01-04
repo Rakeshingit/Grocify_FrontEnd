@@ -1,16 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.b09320f6.css",
-    "main.js": "/static/js/main.2b1c9e69.js",
+    "main.css": "/static/css/main.2a258552.css",
+    "main.js": "/static/js/main.c9872a81.js",
     "static/js/453.0459dc41.chunk.js": "/static/js/453.0459dc41.chunk.js",
+    "static/media/grains.jpg": "/static/media/grains.98de6d81e5c343cca6b6.jpg",
+    "static/media/spices.jpg": "/static/media/spices.65cd7dbf4a750f413b84.jpg",
+    "static/media/Summer_Fresh_bg.png": "/static/media/Summer_Fresh_bg.5722652b2e6496e0bafe.png",
+    "static/media/organic-milk.png": "/static/media/organic-milk.6c1c86e92fbbad07aeed.png",
+    "static/media/Vegetables.png": "/static/media/Vegetables.665040f9a32f7cd15ce1.png",
+    "static/media/apple.png": "/static/media/apple.c1a7b22033e09331274f.png",
+    "static/media/meat.png": "/static/media/meat.d6c53279401a9bf91adb.png",
+    "static/media/Mix_fruits.png": "/static/media/Mix_fruits.febeee44e8bbf7350da8.png",
+    "static/media/Pineapple.png": "/static/media/Pineapple.a44db34f08993af03c5f.png",
+    "static/media/Mango.png": "/static/media/Mango.6ca05f6645335899b212.png",
+    "static/media/Banana.png": "/static/media/Banana.da1b2cf7a9078c021fac.png",
     "static/media/GROCIFY.png": "/static/media/GROCIFY.fd9f8958cb2f67cb3591.png",
+    "static/media/Cardoffers.png": "/static/media/Cardoffers.fb43361ef4b8b6629c6d.png",
     "index.html": "/index.html",
-    "main.b09320f6.css.map": "/static/css/main.b09320f6.css.map",
-    "main.2b1c9e69.js.map": "/static/js/main.2b1c9e69.js.map",
+    "main.2a258552.css.map": "/static/css/main.2a258552.css.map",
+    "main.c9872a81.js.map": "/static/js/main.c9872a81.js.map",
     "453.0459dc41.chunk.js.map": "/static/js/453.0459dc41.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b09320f6.css",
-    "static/js/main.2b1c9e69.js"
+    "static/css/main.2a258552.css",
+    "static/js/main.c9872a81.js"
   ]
 }

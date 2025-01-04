@@ -1,0 +1,200 @@
+.Listed-Products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Listed-Products-header h3 {
+    font-size: 30px;
+}
+
+/*.Listed-Products-header button{*/
+/*    padding: 10px 20px;*/
+/*    color: white;*/
+/*    font-size: 15px;*/
+/*    background: #34495e;*/
+/*    border-radius: 4px;*/
+/*}*/
+
+.add-products-form-container {
+    width: 70%;
+    height: 85%;
+    overflow-y: scroll;
+    /*display: flex;*/
+    background: #e5e7eb;
+    border-radius: 11px;
+    box-shadow: 3px 3px 16px 0px #202020, -1px 0px 8px 0px #ffffff;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px 60px;
+    display: flex;
+    flex-direction: column;
+    -webkit-animation: fade-in-bck 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-bck 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-bck {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-bck {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.form-input-element {
+    display: flex;
+    border-radius: 11px;
+    flex-direction: column;
+    padding-block: 15px;
+}
+
+.form-input-element input, select, textarea {
+    border-radius: 11px;
+    border: none;
+    outline: none;
+}
+
+.form-input-element:nth-child(2) input {
+    height: 10rem;
+}
+
+.form-input-element input[type="file"] {
+    /*visibility: hidden;*/
+    /*position: absolute;*/
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+.image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-preview-wrapper {
+    position: relative;
+
+}
+
+.image-preview {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.delete-button:hover {
+    opacity: 1;
+}
+
+.add-product-controls button {
+    padding: .4rem 1rem;
+    border-radius: var(--btnRadius);
+    color: #fff;
+    margin-left: 1rem;
+    background: var(--successBackground);
+}
+
+.add-product-controls button.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.add-product-controls {
+    /*margin-right: ;*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-product-controls button:first-child {
+    background: var(--cancelBackground);
+}
+
+.stock-green {
+    color: #34c759;
+}
+
+.stock-yellow {
+    color: #e8e829;
+}
+
+.stock-red {
+    color: red;
+}
+
+.action-links-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#action-link-edit, #action-link-delete {
+    font-style: italic;
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+#action-link-delete:hover, #action-link-edit:hover {
+    color: #00254d;
+}
+
+/* Overlay style */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 999; /* Make sure it's above other content */
+    display: none; /* Initially hidden */
+}
+
+/* Show overlay when modal is open */
+.overlay.active {
+    display: block;
+}

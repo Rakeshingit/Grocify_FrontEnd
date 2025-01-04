@@ -1,0 +1,73 @@
+.DialogBoxBG {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.DialogBox {
+    position: absolute;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    border-radius: .5rem;
+    padding: 2rem 2rem;
+    background: #fff;
+    width: 40rem;
+    max-height: 27.5rem;
+    overflow-x: scroll;
+    /*padding-bottom: 2rem;*/
+    z-index: 991;
+    animation: scale-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.DialogBox > header {
+    margin-bottom: 2rem;
+}
+
+.DialogBox > header > h1 {
+    font-size: 1.5em;
+}
+
+.DialogBox > header > p {
+    color: #5b5a5a;
+    line-height: 1.2em;
+}
+
+.DialogBox > form {
+}
+
+.boxButton {
+    /*display: flex;*/
+    /*justify-content: flex-end;*/
+    margin-top: 1rem;
+    float: right;
+}
+
+.close-btn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+@keyframes scale-in-tr {
+    0% {
+        transform: scale(0);
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+        opacity: 1;
+    }
+}

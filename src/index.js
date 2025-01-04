@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import "./index.css";
-import App from "./App";
+//import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./Pages/Homepage";
 import LogInContainer from "./Pages/LogInPage";
 import UserRegistrationForm from "./Pages/UserRegistration";
+import AdminPanel from "./Pages/AdminPanel";
+import AdminLogInContainer from "./Pages/AdminLogIn";
 
 const router = createBrowserRouter([{
     path: "/",
@@ -15,8 +17,14 @@ const router = createBrowserRouter([{
     path: "/login",
     element: <LogInContainer/>
 },{
-    path: "User-Registration",
+    path: "/User-Registration",
     element: <UserRegistrationForm/>
+}, {
+    path: "/admin",
+    element: <AdminLogInContainer/>
+}, {
+    path: "/admin/panel",
+    element: <AdminPanel/>
 }]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

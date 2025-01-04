@@ -1,0 +1,49 @@
+.button-basic {
+    border-radius: .2rem;
+    transition: all .4s
+}
+
+.large {
+    padding: .625rem 1.25rem;
+}
+
+.small {
+    padding: .625rem .5rem;
+}
+
+.Primary {
+    background-color: var(--primary-accent);
+    color: white;
+}
+
+.Primary:hover {
+    background-color: var(--primary-accent-hover);
+}
+
+.Primary:disabled {
+    background-color: var(--primary-accent-grey-down);
+}
+
+.Secondary {
+    background-color: var(--secondaryButton-accent);
+    color: black;
+}
+
+.Outlined {
+    border: .1rem solid #e7e7e9;
+}
+
+.Outlined:hover {
+    background-color: #dedede;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.icon-of-button {
+    font-size: 1.2rem;
+}
+

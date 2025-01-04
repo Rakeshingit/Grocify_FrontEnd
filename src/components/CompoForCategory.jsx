@@ -1,5 +1,5 @@
 import React from "react";
-import './shoppingCart.css';
+import '../Admin Page StylesSheets/shoppingCart.css';
 
 function CateComponent({picture, name}){
     return(

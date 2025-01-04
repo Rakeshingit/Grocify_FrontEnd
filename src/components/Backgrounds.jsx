@@ -1,5 +1,5 @@
 import React from "react";
-import './shoppingCart.css';
+import '../Admin Page StylesSheets/shoppingCart.css';
 import Summer_fresh_bg from '../assets/Summer_Fresh_bg.png'
 
 

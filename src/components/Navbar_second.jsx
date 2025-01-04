@@ -11,6 +11,35 @@ function Navbar_second(){
         <a href="#">Pet Food</a>
         <a href="#">Frozen Foods</a>
         <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Personal Care</a>
     </div>
 }
 

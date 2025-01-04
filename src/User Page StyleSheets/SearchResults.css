@@ -1,0 +1,6 @@
+.SearchResults-container {
+    min-height: 600px;
+    max-width: 1350px;
+    background-color: red;
+    scroll-behavior: smooth;
+}

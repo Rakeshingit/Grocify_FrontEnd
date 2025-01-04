@@ -6,7 +6,7 @@ import mixfruits from '../assets/categories/Mix_fruits.png'
 import organicmilk from '../assets/categories/organic-milk.png'
 import spices from '../assets/categories/spices.jpg'
 import grains from '../assets/categories/grains.jpg'
-import './shoppingCart.css';
+import '../Admin Page StylesSheets/shoppingCart.css';
 
 function Categories(){
     return(

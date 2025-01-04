@@ -1,0 +1,31 @@
+.input-component {
+    display: grid;
+    grid-template-columns:30% 60%;
+    text-align: right;
+    align-items: center;
+}
+
+.input-component > input {
+    /*width: 80%;*/
+    /*padding-right: 6.5rem;*/
+    /*padding-left: .8rem;*/
+    margin-left: .5rem;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+    border-radius: .5rem;
+    border: 1px solid #bdbdbd;
+    font-family: sans-serif;
+    font-size: .9rem;
+}
+
+.input-component > input:focus {
+    border: 1px solid #bdbdbd;
+    outline: var(--primary-accent) 2px solid;
+}
+
+.input-component > label {
+    margin-right: .5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: sans-serif;
+}

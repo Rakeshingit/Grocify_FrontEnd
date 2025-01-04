@@ -1,0 +1,20 @@
+.Users-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Users-header input {
+    border-radius: .2rem;
+}
+
+.Users-header h3 {
+    font-size: 30px;
+}
+
+.interactions {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}

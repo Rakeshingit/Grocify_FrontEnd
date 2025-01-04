@@ -1,0 +1,27 @@
+.Buttons {
+    display: flex;
+    gap: 1rem;
+    float: right;
+    margin-top: 1rem;
+}
+
+.AlertDialog {
+    position: absolute;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    border-radius: .5rem;
+    padding: 2rem 2rem;
+    background: #fff;
+    width: 30rem;
+    max-height: 27.5rem;
+    overflow-x: scroll;
+    /*padding-bottom: 2rem;*/
+    z-index: 991;
+    animation: scale-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.AlertDialog > header > p {
+    color: #5b5a5a;
+    line-height: 1.2em;
+}
